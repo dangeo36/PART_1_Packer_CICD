@@ -10,7 +10,7 @@ packer {
 source "amazon-ebs" "Amazon_linux_2" {
   region                      = "us-east-1"
   ami_name                    = "Amazon_linux_2-packer-ami-{{timestamp}}"
-  instance_type               = "t2.micro"
+  instance_type               = "t2.small"
   source_ami                  = "ami-00c6177f250e07ec1"
   ssh_username                = "ec2-user"
   associate_public_ip_address = true
