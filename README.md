@@ -6,5 +6,7 @@ The goal of this project is to build a secure 3-tier application and deploy to A
 
 In the first part of the project, the goal is to create our own custom ami using Packer. In our 'aws-amazon-linux-2-ami.pkr.hcl' file, we specify our base ami and provisioner information. In the 'provisioner.sh' file, we install AWS SSM (so we don't need to SSH), CloudWatch Agent, AWS Inspector, and Docker. This file is targeted by our .pkr.hcl file. Finally, we write a Jenkinsfile (with access to AWS credentials) to create a pipeline that builds our image. 
 
+Part 2 GitHub Repo: https://github.com/dangeo36/PART_2_Containerize_Java_Application.git 
+
 ## Tools / Dependencies
 For this project, I have an Amazon EC2 instance (Ubuntu 20.04, t2.medium) that has Java 17, Jenkins, Terraform, awcli (configured with proper credentials), and Packer. 
